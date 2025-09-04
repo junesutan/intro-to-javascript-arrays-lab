@@ -118,8 +118,8 @@ console.log('Exercise 14 result:', num);
 
 let total = 0;
 
-numArrays.forEach(num => {
-    num.forEach(num => { // I copied this bc it was concatenating my numbers as strings without it 
+numArrays.forEach(arr => {
+    arr.forEach(num => { // I copied this bc it was concatenating my numbers as strings without it 
         total += num;
     });
 });
