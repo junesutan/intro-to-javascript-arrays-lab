@@ -28,4 +28,27 @@ console.log('Exercise 4 result:', favFood);
 
 //EXERCISE 5
 
-console.log(foods)
+//note: insert "tofu" between "pizza" and "cheeseburger"
+
+foods.splice(2,0,"tofu")
+
+console.log('Exercise 5 result:', foods);
+
+
+
+//EXERCISE 6 -- replace 
+
+foods.splice(1,1,"sushi","cupcake")
+console.log('Exercise 6 result:', foods);
+
+//EXERCISE 7 -- slice() to copy a part of an array (or string).
+
+const yummy = foods.slice(1, 3)
+
+console.log('Exercise 7 result:', yummy);
+
+//EXERCISE 8 -- indexOf() to search 
+
+const soyIdx = foods.indexOf("tofu")
+
+console.log('Exercise 8 result:', soyIdx);
