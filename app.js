@@ -96,3 +96,32 @@ console.log('  buzz:', buzz);
 console.log('  fizzbuzz:', fizzbuzz);
 
 
+//EXERCISE 13 -- two-dimensional arrays 
+
+const numArrays = [
+	[100, 5, 23],
+	[15, 21, 72, 9],
+	[45, 66],
+	[7, 81, 90]
+];
+
+const numList = numArrays[numArrays.length-1]
+
+console.log(numList)
+
+//EXERCISE 14 Accessing within nested arrays
+const num = numArrays[2][1]
+console.log('Exercise 14 result:', num);
+
+
+//EXERCISE 15 
+
+let total = 0;
+
+numArrays.forEach(num => {
+    num.forEach(num => { // I copied this bc it was concatenating my numbers as strings without it 
+        total += num;
+    });
+});
+
+console.log('Exercise 15 result:\n', total);
